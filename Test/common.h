@@ -7,3 +7,8 @@
 using namespace std;
 using namespace DirectX;
 using namespace DirectX::PackedVector;
+void printXMVECTOR(FXMVECTOR a);
+
+void printXMVECTOR(FXMVECTOR a){
+    cout << XMVectorGetX(a) << " " << XMVectorGetY(a) << " " << XMVectorGetZ(a) << " " << XMVectorGetW(a) << endl;
+}
