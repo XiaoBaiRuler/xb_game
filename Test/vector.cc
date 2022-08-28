@@ -90,5 +90,20 @@ int main(){
     // 6.2 /=
     l /= 5;
     printXMVECTOR(l);
+
+    // 数学操作
+    cout << XM_PI << endl;
+    cout << XM_2PI << endl;
+    cout << XM_1DIVPI << endl;
+    cout << XM_1DIV2PI << endl;
+    cout << XM_PIDIV2 << endl;
+    cout << XM_PIDIV4 << endl;
+    // 弧度: 角度 * (PI / 180)
+    // 角度: 弧度 * (180 / PI)
+    // 角度转弧度
+    cout << XMConvertToRadians(180) << endl;
+    // 弧度转角度
+    cout << XMConvertToDegrees(XM_PI) << endl;
+
     return EXIT_SUCCESS;
 }
