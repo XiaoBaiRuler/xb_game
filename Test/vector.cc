@@ -1,6 +1,7 @@
 #include "common.h"
 int main(){
-    
+    cout.setf(ios_base::boolalpha);
+
     // 1. 局部 / 全局使用XMVECTOR
     // 2. 类中数据成员使用 XMFLOATX(2,3,4)
     // 3. 使用XMVECTOR来进行运算
@@ -105,5 +106,65 @@ int main(){
     // 弧度转角度
     cout << XMConvertToDegrees(XM_PI) << endl;
 
+
+    // 赋初值
+    // (0, 0, 0, 0)
+    XMVECTOR zero = XMVectorZero();
+    cout << zero << endl;
+    // (1, 1, 1, 1)
+    XMVECTOR one = XMVectorSplatOne();
+    cout << one << endl;
+    // (x, y, z, w)
+    XMVECTOR vec = XMVectorSet(1, 2, 3, 4);
+    cout << vec << endl;
+    // (v, v, v, v)
+    XMVECTOR vpp = XMVectorReplicate(6);
+    cout << vpp << endl;
+    // (vx, vx, vx, vx)
+    XMVECTOR vxp = XMVectorSplatX(vec);
+    cout << vxp << endl;
+    // (vy, vy, vy, vy)
+    XMVECTOR vyp = XMVectorSplatY(vec);
+    cout << vyp << endl;
+    // (vz, vx, vx, vx)
+    XMVECTOR vzp = XMVectorSplatZ(vec);
+    cout << vzp << endl;
+    // (vx, vx, vx, vx)
+    XMVECTOR vwp = XMVectorSplatW(vec);
+    cout << vwp << endl;
+
+    // 向量函数
+    // 1. 长度
+    XMVECTOR length = XMVector4Length(vec);
+    cout << length << endl;
+    // 2. 长度 * 长度
+    XMVECTOR ll = XMVector4LengthSq(vec);
+    cout << ll << endl;
+    // 3. 点乘
+    XMVECTOR dot = XMVector4Dot(vec, zero);
+    cout << dot << endl;
+    // 4. 叉乘
+    XMVECTOR cross = XMVector3Cross(vec, one);
+    cout << cross << endl;
+    // 5. 转单位向量
+    XMVECTOR toNormal = XMVector4Normalize(vec);
+    cout << toNormal << endl;
+    // 6. 求它的正交向量
+    XMVECTOR orthogonal = XMVector4Orthogonal(vec);
+    cout << orthogonal << endl;
+    // 7. 规范化向量
+    XMVECTOR proj, perp;
+    XMVector3ComponentsFromNormal(&proj, &perp, vec, toNormal);
+    cout << proj << endl;
+    cout << perp << endl;
+    // 绝对相等或不等
+    cout << XMVector4Equal(one, zero) << endl;
+    XMVECTOR right = XMVector4Normalize(one);
+    cout << right << endl;
+    cout << XMVector4Equal(one, right) << endl;
+    // 误差内相等
+    XMVECTOR epsilon;
+    XMVectorSetX(epsilon, 1.0e-6f);
+    cout << XMVector4NearEqual(one, right, epsilon) << endl;
     return EXIT_SUCCESS;
 }
