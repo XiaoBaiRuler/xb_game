@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../common/common.h"
 int main(){
     if (XMVerifyCPUSupport()){
         cout << "DirectXMath" << endl;

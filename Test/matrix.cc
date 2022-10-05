@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../common/common.h"
 int main(){
     // 4个XMVECTOR组成的XMMATRIX
     XMMATRIX vx4(1, 1, 1, 1,

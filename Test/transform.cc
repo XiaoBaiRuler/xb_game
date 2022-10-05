@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../common/common.h"
 int main(){
     // 构建一个缩放矩阵
     XMMATRIX enlarge1 = XMMatrixScaling(10.0f, 10.0f, 10.0f);
