@@ -63,10 +63,41 @@ b_z & b_y & b_z & 1 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 -b_z & -b_y & -b_z & 1 \\
-\end{matrix}\right]
+\end{matrix}\right] \tag{1.3}
 $$
 
+**5. 坐标变换**
 
+- <mark style="color:green">不同标架间的坐标变换: 相对于标架A表示某量的标量k，转换为相对于标架B描述同一种量的新变量$k^{'}$(都是相对位置来说的)</mark>
+  $$
+  A: P = xu + yv + zw \\
+  => B: P_B = xu_B + yv_B + zw_B \\
+  
+  => 包含平移: P_B = xu_B + yv_B + zw_B + Q_B (Q_B标架A中的原点) \\
+  => 坐标变换矩阵(标架变换矩阵)
+  \left[\begin{matrix}
+  	x, y, z, w
+  \end{matrix}\right]
+  \left[\begin{matrix}
+  	u_x & u_y & u_z & 0 \\
+  	v_x & v_y & v_z & 0 \\
+  	w_x & w_y & w_z & 0 \\
+  	Q_x & Q_y & Q_z & 1 \\
+  \end{matrix}\right] \tag{1.4}
+  $$
+
+- <mark style="color:blue;">坐标变换矩阵之间乘积满足结合律，但不满足交换律</mark>
+
+- <mark style="color:red;">坐标交换矩阵是可逆的, 证明:</mark>
+  $$
+  假设给定向量P相对于标架B的坐标P_B, \\
+  以及将坐标A转换到标架B的变换矩阵:  \\
+  P_B = P_AM \space\space\space\space\space\space\space\space \\
+  => P_BM^{-1} = P_AMM^{-1} \\
+  => P_BM^{-1} = P_AI \space\space\space\space\space\space\space\space\space\space \\
+  => P_BM^{-1} = P_A \space\space\space\space\space\space\space\space\space\space\space\space \tag{1.5}
+  $$
+  
 
 
 ## 2. 推理
