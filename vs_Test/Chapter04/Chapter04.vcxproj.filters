@@ -23,9 +23,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d3dApp.cc">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="test.cc">
       <Filter>源文件</Filter>
     </ClCompile>

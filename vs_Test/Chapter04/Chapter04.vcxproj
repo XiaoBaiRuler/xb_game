@@ -23,7 +23,6 @@
     <ClInclude Include="..\..\common\d3dUtil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="d3dApp.cc" />
     <ClCompile Include="test.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

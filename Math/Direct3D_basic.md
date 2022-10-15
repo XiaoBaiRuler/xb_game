@@ -112,13 +112,21 @@
   2. HWND: 类似long的基本类型: 
   	- 窗口创建系统分配的一个句柄
   	- H: 类型,句柄(handle); WND: 变量对象描述,窗口; 窗口句柄
-  3. LRESULT: Windows进程或者回调函数的返回值(Win32: 32无符号长整型; Win64: 64无符号长整型)
+  3. LRESULT, HRESULT: 
+  	- LRESULT: Windows进程或者回调函数的返回值(Win32: 32无符号长整型; Win64: 64无符号长整型)
+  	- HRESULT: 存储返回信息(LONG 4字节, 32位): 正数为成功, 负数为失败
+          - S_OK 操作成功
+          - S_FALSE 操作成功, 但是有问题
+          - E_ABORT 操作中止
+          - E_ACCESSDENIED 拒绝访问
+          - E_FAIL 未知错误
   4. UINT: 无符号整型
   5. WPARAM: 一个与消息有关的常量值，也可能时窗口或控件的句柄.
   6. LPARAM: 一个指向内存中数据的指针，必要时可以强制转换.
   7. LARGE_INTEGER: union, 表示64位有符号整数值
   	- 支持64位: __int64, QuandPart使用
   	- 支持32位: 高低位使用, LowPart(32),HighPart(32)[最高位为符号位]
+  	
   ```
   
   ```c++
