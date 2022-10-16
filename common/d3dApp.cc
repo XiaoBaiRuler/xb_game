@@ -120,6 +120,11 @@ void D3DApp::LogAdapter(){
         ReleaseCom(adapterList[i]);
     }
 }
+/**
+ * @brief 枚举适配器（视频卡）输出
+ * 
+ * @param adapter 
+ */
 void D3DApp::LogAdapterOutputs(IDXGIAdapter* adapter){
     UINT i = 0;
     IDXGIAdapter* output = nullptr;
@@ -138,6 +143,12 @@ void D3DApp::LogAdapterOutputs(IDXGIAdapter* adapter){
         ++ i;
     }
 }
+/**
+ * @brief 获取与请求的格式和其他输入选项匹配的显示模式
+ * 
+ * @param output 
+ * @param format 
+ */
 void D3DApp::LogOutputDisplayModes(IDXGIOutput* output, DXGI_FORMAT format){
 
     UINT count = 0;
@@ -147,6 +158,7 @@ void D3DApp::LogOutputDisplayModes(IDXGIOutput* output, DXGI_FORMAT format){
     // 使用nullptr调用以获取列表计数
     output -> GetDisplayModeList(format, flags, &count, nullptr);
 
+    // 获取具体列表
     std::vector<DXGI_MODE_DESC> modeList(count);
     output -> GetDisplayModeList(format, flags, &count, &modeList[0]);
     
@@ -163,14 +175,3 @@ void D3DApp::LogOutputDisplayModes(IDXGIOutput* output, DXGI_FORMAT format){
         ::OutputDebugString(text.c_str());
     }
 }
-
-
-
-
-// 渲染窗口
-// void D3DApp::FlushCommandQueue(){
-//     // Advance the fence value to mark commands up to this fence point.
-//     // 推进栅栏值以将命令标记到此栅栏点
-//     mCurrentFence ++;
-
-// }
