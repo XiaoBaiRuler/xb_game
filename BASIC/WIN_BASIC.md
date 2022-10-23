@@ -82,7 +82,41 @@ void OutputDebugStringW(
 // 系统性能统计计数器: 表示统计了多少次
 ```
 
+### CreateEventExA
+
+```c++
+// 创建或打开有名称或无名称的事件对象，并返回该对象的句柄
+HANDLE CreateEventExA(
+    [in, optional] LPSECURITY_ATTRIBUTES lpEventAttributes,
+    // 如果lpName为NULL，则创建的事件对象没有名称
+    [in, optional] LPCSTR                lpName,
+    [in]           DWORD                 dwFlags,
+    [in]           DWORD                 dwDesiredAccess
+);
+```
+
+### WaitForMultipleObjects
+
+```c++
+// 等待，直到指定的对象处于有信号状态或超时间隔结束
+DWORD WaitForSingleObject(
+    [in] HANDLE hHandle,
+    [in] DWORD  dwMilliseconds
+);
+```
+
+### CloseHandle
+
+```c++
+// 关闭打开的对象句柄
+BOOL CloseHandle(
+  [in] HANDLE hObject
+);
+```
+
 ## 5. 常见接口
+
+
 
 
 

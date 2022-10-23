@@ -96,6 +96,32 @@ bool D3DApp::InitDirect3D(){
 }
 
 /**
+ * @brief 使用fence刷新命令队列
+ * 
+ */
+UINT64 mCurrentFence = 0;
+void D3DApp::FlushCommandQueue(){
+    // 增加围栏值，接下来将命令标记到此围栏点
+    mCurrentFence ++;
+
+    // 向命令队列中添加一条用来设置新围栏点的命令
+    // 由于这条命令要交由GPU处理，所以GPU处理完命令队列此Singnal()的所有命令之前，它并不会设置新的围栏点
+    ThrowIfFailed(mCommandQueue -> Signal(mFence.Get(), mCurrentFence));
+
+    // 在CPU端等待GPU, 直到后者执行完这个围栏点之前的所有命令
+    if (mFence -> GetCompletedValue() < mCurrentFence){
+
+        HANDLE eventHandle = createEventEx(nullptr, false, false, EVENT_ALL_ACCESS);
+        // 若GPU命中当前的围栏，则激发预定事件
+        ThrowIfFailed(mFence -> SetEventOnCompletion(mCurrentFence, eventHandle));
+        // 等待GPU命中围栏，激发事件
+        WaitForSingleObject(eventHandle, INFINITE);
+        CloseHandle(eventHandle);
+    }
+}
+
+
+/**
  * @brief 枚举一个系统中的所有适配器
  * 
  */

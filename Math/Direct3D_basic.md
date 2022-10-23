@@ -106,7 +106,7 @@ ComPtr<ID3D12GraphicsCommandList> mRootCommandList;
 
 ## 2. CPU与GPU间交换
 
-### 1. 命令队列和命令列表
+### 1. <mark style="color:red;">命令队列和命令列表</mark>
 
 ```mathematica
 1. 命令队列(command queue): 每个GPU都维护着一个命令队列(环形缓冲区[ring buffer])
@@ -117,5 +117,43 @@ ComPtr<ID3D12GraphicsCommandList> mRootCommandList;
 	
 ```
 
-### 2. CPU与GPU间的同步
+### 2. <mark>CPU与GPU间的同步</mark>
 
+```mathematica
+1. 同步问题:
+	eg1: GPU还没绘制完物体, CPU就提前更新它的位置信息.
+2. 解决方法:
+	刷新命令队列(flushing the command queue): 强制CPU等待，直到GPU完成所有命令的处理, 达到指定围栏点为止(fence point).
+
+```
+
+### 3. <mark style="color:green;">资源转换</mark>
+
+```mathematica
+1. 资源冒险(resource hazard): 当GPU的写操作还没有完成亦或还没有开始，就开始读取资源(先写后读).
+2. 转换资源屏障(transition resource barrier)数组: 通过命令列表设置, 一次API调用来转换多个资源.
+```
+
+### 4. <mark style="color:blue;">命令与多线程</mark>
+
+```mathematica
+注意:
+	- 命令列表并非自由线程(not free-threaded)对象: 不能同时共享相同命令列表和调用同一命令列表.
+	- 命令分配器也不是线程自由的对象: 不能同时共享同一个命令分配器和调用同一命令分配器. 
+	- 命令队列是线程自由对象: 每个线程都能同时向命令队列提交它们自己所生成的命令列表.
+	- 初始化时，需要指出用于并行记录命令的命令列表最大数量(性能原因).
+```
+
+## 3. 初始化Direct3D
+
+```mathematica
+1. 用D3D12CreateDevice函数创建ID3D12Device接口实例.
+2. 创建一个ID3D12Fence对象，并查询描述符的大小.
+3. 检测用户设备对4X MSAA质量级别的支持情况.
+4. 依次创建命令队列、命令列表分配器和主命令列表.
+5. 描述并创建交换链.
+6. 创建应用程序所需的描述符堆.
+7. 调整后台缓冲区大小，并为它创建渲染目标视图.
+8. 创建深度/模板缓冲区及与之关联的深度/模板视图.
+9. 设置视口(viewport)和裁剪矩形(scissor rectangle).
+```

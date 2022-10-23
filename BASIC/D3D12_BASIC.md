@@ -65,7 +65,11 @@ typedef struct D3D11_VIEWPORT {
 } D3D11_VIEWPORT;
 ```
 
+### CD3DX12_RESOURCE_BARRIER
 
+```c++
+// 继承于D3D12_RESOURCE_BARRIER
+```
 
 ## 2. 常见接口
 
@@ -204,6 +208,17 @@ void ExecuteCommandLists(
 );
 ```
 
+#### Signal
+
+```c++
+// 将栅栏更新为指定值
+HRESULT Signal(
+    ID3D12Fence *pFence,
+    // 设置围栏的价值
+    UINT64      Value
+);
+```
+
 ### ID3D12GraphicsCommandList
 
 ```mathematica
@@ -285,6 +300,42 @@ HRESULT Close();
 // 在没有确定GPU执行完命令分配器中的所有命令之前，不要重置命令分配器
 ```
 
+### ID3D12Fence
+
+#### CreateFence
+
+```c++
+// 创建一个围栏对象
+HRESULT CreateFence(
+    // 围栏的初始值
+    UINT64            InitialValue,
+    D3D12_FENCE_FLAGS Flags,
+    // 栅栏接口(ID3D12Fence)的全局唯一标识符(GUID)
+    REFIID            riid,
+    // 该内存块接收一个指向ID3D12Fence接口的指针
+    [out] void              **ppFence
+);
+```
+
+#### GetCompletedValue
+
+```C++
+// 获取栅栏的当前值
+UINT64 GetCompletedValue();
+```
+
+#### SetEventOnCompletion
+
+```c++
+// 指定当围栏达到某个值时引发的事件
+HRESULT SetEventOnCompletion(
+    // 要向事件发送信号时的fence值
+    UINT64 Value,
+    // 事件对象的句柄
+    HANDLE hEvent
+);
+```
+
 ## 3. 常见枚举
 
 ### D3D_FEATURE_LEVEL
@@ -341,3 +392,17 @@ typedef enum D3D12_COMMAND_QUEUE_FLAGS {
 } ;
 ```
 
+### D3D12_FENCE_FLAGS
+
+```c++
+typedef enum D3D12_FENCE_FLAGS {
+    // 没有指定选项
+    D3D12_FENCE_FLAG_NONE = 0,
+    // 围栏是共享的
+    D3D12_FENCE_FLAG_SHARED = 0x1,
+    // 围栏与另一个GPU适配器共享
+    D3D12_FENCE_FLAG_SHARED_CROSS_ADAPTER = 0x2,
+    // 围栏为非监控类型
+    D3D12_FENCE_FLAG_NON_MONITORED = 0x4
+} ;
+```
