@@ -148,6 +148,7 @@ ComPtr<ID3D12GraphicsCommandList> mRootCommandList;
 
 ```mathematica
 1. 用D3D12CreateDevice函数创建ID3D12Device接口实例.
+	- 创建失败之后，可以使用WARP(Windows Advanced Rasterization Platform): 软件版的图形适配器.
 2. 创建一个ID3D12Fence对象，并查询描述符的大小.
 3. 检测用户设备对4X MSAA质量级别的支持情况.
 4. 依次创建命令队列、命令列表分配器和主命令列表.
