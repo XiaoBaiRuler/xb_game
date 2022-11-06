@@ -1,0 +1,161 @@
+﻿  d3dApp.cc
+E:\GitStore\xb_game\common\d3dApp.h(20,1): error C2236: 意外的标记“class”。是否忘记了“;”?
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2059: 语法错误:“{”
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\GitStore\xb_game\common\d3dApp.cc(11,9): error C2653: “D3DApp”: 不是类或命名空间名称
+E:\GitStore\xb_game\common\d3dApp.cc(11,17): error C3861: “GetApp”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(15,7): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+E:\GitStore\xb_game\common\d3dApp.cc(15,7): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\GitStore\xb_game\common\d3dApp.cc(15,9): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(15,17): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(15,24): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\GitStore\xb_game\common\d3dApp.cc(18,1): error C2146: 语法错误: 缺少“;”(在标识符“D3DApp”的前面)
+E:\GitStore\xb_game\common\d3dApp.cc(18,9): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(18,17): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(19,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\GitStore\xb_game\common\d3dApp.cc(19,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\GitStore\xb_game\common\d3dApp.cc(23,1): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(23,9): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(23,37): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\GitStore\xb_game\common\d3dApp.cc(23,15): error C2365: “D3DApp”: 重定义；以前的定义是“数据变量”
+E:\GitStore\xb_game\common\d3dApp.cc(15): message : 参见“D3DApp”的声明
+E:\GitStore\xb_game\common\d3dApp.cc(24,1): error C2550: “D3DApp”: 构造函数初始值设定项列表只能在构造函数定义中使用
+E:\GitStore\xb_game\common\d3dApp.cc(26,9): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+E:\GitStore\xb_game\common\d3dApp.cc(29,1): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(29,10): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(30,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\GitStore\xb_game\common\d3dApp.cc(31,6): error C2065: “md3dDevice”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(32,3): error C3861: “FlushCommandQueue”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(34,1): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
+E:\GitStore\xb_game\common\d3dApp.cc(38,11): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(38,19): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(39,1): error C2270: “AppInst”: 非成员函数上不允许修饰符
+E:\GitStore\xb_game\common\d3dApp.cc(40,9): error C2065: “mhAppInst”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(44,6): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(44,14): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(45,1): error C2270: “MainWnd”: 非成员函数上不允许修饰符
+E:\GitStore\xb_game\common\d3dApp.cc(46,9): error C2065: “mhMainWnd”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(50,7): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(50,15): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(51,1): error C2270: “AspectRatio”: 非成员函数上不允许修饰符
+E:\GitStore\xb_game\common\d3dApp.cc(52,28): error C2065: “mClientWidth”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(52,44): error C2065: “mClientHeight”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(56,6): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(56,14): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(57,1): error C2270: “Get4XMsaaState”: 非成员函数上不允许修饰符
+E:\GitStore\xb_game\common\d3dApp.cc(58,9): error C2065: “m4xMsaaState”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(62,6): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(62,14): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(63,1): error C2091: 函数返回函数
+E:\GitStore\xb_game\common\d3dApp.cc(63,1): error C2270: “Set4XMsaaState”: 非成员函数上不允许修饰符
+E:\GitStore\xb_game\common\d3dApp.cc(64,6): error C2065: “m4xMsaaState”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(64,22): error C2065: “value”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(65,3): error C2065: “m4xMsaaState”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(65,18): error C2065: “value”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(66,3): error C3861: “CreateSwapChain”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(67,3): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(72,5): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(72,13): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(75,2): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(83,4): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(85,9): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(86,5): error C3861: “CalculateFrameStats”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(87,12): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(87,5): error C3861: “Update”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(88,10): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(88,5): error C3861: “Draw”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(98,6): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(98,14): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(100,7): error C3861: “InitMainWindow”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(103,7): error C3861: “InitDirect3D”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(106,2): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(111,9): error C2825: 'D3DApp': 当后面跟“::”时必须为类或命名空间
+E:\GitStore\xb_game\common\d3dApp.cc(111,17): error C2510: “D3DApp”:“::”的左边必须是类/结构/联合
+E:\GitStore\xb_game\common\d3dApp.cc(119,5): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(120,5): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(123,5): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(124,5): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(129,4): error C2065: “mClientWidth”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(130,4): error C2065: “mClientHeight”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(131,8): error C2065: “md3dDevice”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(133,6): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(134,6): error C2065: “mMinimized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(135,6): error C2065: “mMaximized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(138,6): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(139,6): error C2065: “mMinimized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(140,6): error C2065: “mMaximized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(143,10): error C2065: “mMinimized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(144,7): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(145,7): error C2065: “mMinimized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(146,7): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(148,15): error C2065: “mMaximized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(149,7): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(150,7): error C2065: “mMaximized”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(151,7): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(153,15): error C2065: “mResizing”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(157,7): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(164,4): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(165,4): error C2065: “mResizing”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(166,4): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(171,4): error C2065: “mAppPaused”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(172,4): error C2065: “mResizing”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(173,4): error C2065: “mTimer”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(174,4): error C3861: “OnResize”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(185,18): error C2065: “LParam”: 未声明的标识符
+E:\GitStore\xb_game\common\d3dApp.cc(190,4): error C3861: “OnMouseDown”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(195,4): error C3861: “OnMouseUp”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(198,4): error C3861: “OnMouseMove”: 找不到标识符
+E:\GitStore\xb_game\common\d3dApp.cc(198,66): fatal error C1003: 错误计数超过 100；正在停止编译
+  GamerTimer.cc
+E:\GitStore\xb_game\common\GamerTimer.cc(4,12): error C2533: “GameTimer::{ctor}”: 构造函数不能有返回类型
+E:\GitStore\xb_game\common\GamerTimer.cc(5,26): error C2614: “GameTimer”: 非法的成员初始化:“mPasedTime”不是基或成员
+  InitDirect3DApp.cc
+E:\GitStore\xb_game\common\d3dApp.h(20,1): error C2236: 意外的标记“class”。是否忘记了“;”?
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2059: 语法错误:“{”
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\GitStore\xb_game\common\d3dApp.h(21,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(8,1): error C2504: “D3DApp”: 未定义基类
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(12,18): error C3668: “InitDirect3DApp::Initialize”: 包含重写说明符“override”的方法没有重写任何基类方法
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(14,18): error C3668: “InitDirect3DApp::OnResize”: 包含重写说明符“override”的方法没有重写任何基类方法
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(15,18): error C3668: “InitDirect3DApp::Update”: 包含重写说明符“override”的方法没有重写任何基类方法
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(16,18): error C3668: “InitDirect3DApp::Draw”: 包含重写说明符“override”的方法没有重写任何基类方法
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(29,23): error C2039: "Run": 不是 "InitDirect3DApp" 的成员
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(7): message : 参见“InitDirect3DApp”的声明
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(38,57): error C2614: “InitDirect3DApp”: 非法的成员初始化:“D3DApp”不是基或成员
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(40,24): error C2577: “InitDirect3DApp::~InitDirect3DApp”: 析构函数 不能有返回类型
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(44,10): error C2653: “D3DApp”: 不是类或命名空间名称
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(52,5): error C2653: “D3DApp”: 不是类或命名空间名称
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(60,5): error C2065: “mDirectCmdListAlloc”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(62,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(62,5): error C2065: “mDirectCmdListAlloc”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(64,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(64,41): error C2653: “CD3DX12_RESOURCE_BARRIER”: 不是类或命名空间名称
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(65,9): error C3861: “CurrentBackBuffer”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(64,67): error C3861: “Transition”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(70,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(70,40): error C2065: “mScreenViewport”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(71,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(71,43): error C2065: “mScissorRect”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(73,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(73,43): error C3861: “CurrentBackBufferView”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(74,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(74,43): error C3861: “DepthStencilView”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(77,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(77,44): error C3861: “CurrentBackBufferView”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(77,76): error C3861: “DepthStencilView”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(79,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(79,41): error C2653: “CD3DX12_RESOURCE_BARRIER”: 不是类或命名空间名称
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(80,9): error C3861: “CurrentBackBuffer”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(79,67): error C3861: “Transition”: 找不到标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(85,5): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(87,39): error C2065: “mCommandList”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(87,24): error C2466: 不能分配常量大小为 0 的数组
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(88,5): error C2065: “mCommandQueue”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(90,5): error C2065: “mSwapChain”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(91,5): error C2065: “mCurrBackBuffer”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(91,24): error C2065: “mCurrBackBuffer”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(91,47): error C2065: “SwapChainBufferCount”: 未声明的标识符
+E:\GitStore\xb_game\vs_Test\Chapter04\InitDirect3DApp.cc(93,5): error C3861: “FlushCommandQueue”: 找不到标识符
+  test.cc
+  正在生成代码...

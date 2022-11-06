@@ -1,26 +1,26 @@
- #include "../../common/d3dUtil.h"
- int main() {
- 	//ComPtr<ID3D12RootSignature> mRootSignature;
- 	//// ·µ»ØÖ¸Ïò´Ëµ×²ãCOM½Ó¿ÚµÄÖ¸Õë
- 	//mRootSignature.Get();
- 	//// ·µ»ØÖ¸Ïò´Ëµ×²ãCOM½Ó¿ÚÖ¸ÕëµÄµØÖ·
- 	//mRootSignature.GetAddressOf();
- 	//// ÉèÖÃÎªnull²¢ÊÍ·ÅÓëÖ®Ïà¹ØµÄËùÓĞÒıÓÃ(¼õÉÙµ×²ãCOM½Ó¿ÚµÄÒıÓÃ¼ÆÊı)
- 	//mRootSignature.Reset();
+ï»¿//  #include "../../common/d3dUtil.h"
+//  int main() {
+//  	//ComPtr<ID3D12RootSignature> mRootSignature;
+//  	//// è¿”å›æŒ‡å‘æ­¤åº•å±‚COMæ¥å£çš„æŒ‡é’ˆ
+//  	//mRootSignature.Get();
+//  	//// è¿”å›æŒ‡å‘æ­¤åº•å±‚COMæ¥å£æŒ‡é’ˆçš„åœ°å€
+//  	//mRootSignature.GetAddressOf();
+//  	//// è®¾ç½®ä¸ºnullå¹¶é‡Šæ”¾ä¸ä¹‹ç›¸å…³çš„æ‰€æœ‰å¼•ç”¨(å‡å°‘åº•å±‚COMæ¥å£çš„å¼•ç”¨è®¡æ•°)
+//  	//mRootSignature.Reset();
 
- 	//// ÃüÁîÁĞ±íCOM½Ó¿Ú
- 	//ComPtr<ID3D12GraphicsCommandList> mRootCommandList;
+//  	//// å‘½ä»¤åˆ—è¡¨COMæ¥å£
+//  	//ComPtr<ID3D12GraphicsCommandList> mRootCommandList;
 
- 	//// ²éÑ¯¶ÔÓ¦µÄÖÊÁ¿¼¶±ğ
- 	//D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS msQualityLevels;
- 	//DXGI_FORMAT mBackBufferFormat = DXGI_FORMAT_R8G8B8A8_UNORM;
- 	//msQualityLevels.Format = mBackBufferFormat;
- 	//msQualityLevels.SampleCount = 4;
- 	//msQualityLevels.Flags = D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG_NONE;
- 	//msQualityLevels.NumQualityLevels = 0;
+//  	//// æŸ¥è¯¢å¯¹åº”çš„è´¨é‡çº§åˆ«
+//  	//D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS msQualityLevels;
+//  	//DXGI_FORMAT mBackBufferFormat = DXGI_FORMAT_R8G8B8A8_UNORM;
+//  	//msQualityLevels.Format = mBackBufferFormat;
+//  	//msQualityLevels.SampleCount = 4;
+//  	//msQualityLevels.Flags = D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG_NONE;
+//  	//msQualityLevels.NumQualityLevels = 0;
 
- 	//ThrowIfFailed()
-     cout << sizeof(HRESULT) << endl;
+//  	//ThrowIfFailed()
+//      cout << sizeof(HRESULT) << endl;
 
- 	return EXIT_SUCCESS;
- }
+//  	return EXIT_SUCCESS;
+//  }

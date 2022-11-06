@@ -1,3 +1,4 @@
+ï»¿#pragma execution_character_set("utf-8")
 #pragma once
 
 
@@ -32,7 +33,7 @@ using Microsoft::WRL::ComPtr;
 using namespace std;
 using namespace DirectX;
 
-// Á´½Ó¶¯Ì¬¿â
+// é“¾æ¥åŠ¨æ€åº“
 #pragma comment(lib, "d3dcompiler.lib")
 #pragma comment(lib, "D3D12.lib")
 #pragma comment(lib, "dxgi.lib")

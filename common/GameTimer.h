@@ -1,3 +1,4 @@
+﻿#pragma execution_character_set("utf-8")
 #ifndef GAMETIMER_H
 #define GAMETIMER_H
 class GameTimer

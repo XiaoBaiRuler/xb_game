@@ -21,8 +21,12 @@
   <ItemGroup>
     <ClInclude Include="..\..\common\d3dApp.h" />
     <ClInclude Include="..\..\common\d3dUtil.h" />
+    <ClInclude Include="..\..\common\GameTimer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\common\d3dApp.cc" />
+    <ClCompile Include="..\..\common\GamerTimer.cc" />
+    <ClCompile Include="InitDirect3DApp.cc" />
     <ClCompile Include="test.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -109,8 +113,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
